@@ -1,11 +1,11 @@
 # NeRF: Neural Radiance Fields
-### [Project Page](http://tancik.com/nerf) | [Video](https://youtu.be/JuH79E8rdKc) | [Paper](https://arxiv.org/abs/2003.08934) | [Data](https://drive.google.com/drive/folders/128yBriW1IG_3NJ5Rp7APSTZsJqdJdfc1)
+### [Project Page](http://matthewtancik.com/nerf) | [Video](https://youtu.be/JuH79E8rdKc) | [Paper](https://arxiv.org/abs/2003.08934) | [Data](https://drive.google.com/drive/folders/1cK3UDIJqKAAm7zyrxRYVFJ0BRMgrwhh4)
 [![Open Tiny-NeRF in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bmild/nerf/blob/master/tiny_nerf.ipynb)<br>
 Tensorflow implementation of optimizing a neural representation for a single scene and rendering new views.<br><br>
 [NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis](http://tancik.com/nerf)  
- [Ben Mildenhall](https://people.eecs.berkeley.edu/~bmild/)\*<sup>1</sup>,
+ [Ben Mildenhall](https://bmild.github.io/)\*<sup>1</sup>,
  [Pratul P. Srinivasan](https://people.eecs.berkeley.edu/~pratul/)\*<sup>1</sup>,
- [Matthew Tancik](http://tancik.com/)\*<sup>1</sup>,
+ [Matthew Tancik](http://matthewtancik.com/)\*<sup>1</sup>,
  [Jonathan T. Barron](http://jonbarron.info/)<sup>2</sup>,
  [Ravi Ramamoorthi](http://cseweb.ucsd.edu/~ravir/)<sup>3</sup>,
  [Ren Ng](https://www2.eecs.berkeley.edu/Faculty/Homepages/yirenng.html)<sup>1</sup> <br>
@@ -55,7 +55,7 @@ Optimizing a NeRF takes between a few hours and a day or two (depending on resol
 
 ## Running code
 
-Here we show how to run our code on two example scenes. You can download the rest of the synthetic and real data used in the paper [here](https://drive.google.com/drive/folders/128yBriW1IG_3NJ5Rp7APSTZsJqdJdfc1).
+Here we show how to run our code on two example scenes. You can download the rest of the synthetic and real data used in the paper [here](https://drive.google.com/drive/folders/1cK3UDIJqKAAm7zyrxRYVFJ0BRMgrwhh4).
 
 ### Optimizing a NeRF
 
@@ -71,7 +71,7 @@ python run_nerf.py --config config_fern.txt
 ```
 After 200k iterations (about 15 hours), you should get a video like this at `logs/fern_test/fern_test_spiral_200000_rgb.mp4`:
 
-![ferngif](https://people.eecs.berkeley.edu/~bmild/nerf/fern_200k_256w.gif)
+![ferngif](https://bmild.github.io/nerf/fern_200k_256w.gif)
 
 To optimize a low-res Lego NeRF:
 ```
@@ -79,7 +79,7 @@ python run_nerf.py --config config_lego.txt
 ```
 After 200k iterations, you should get a video like this:
 
-![legogif](https://people.eecs.berkeley.edu/~bmild/nerf/lego_200k_256w.gif)
+![legogif](https://bmild.github.io/nerf/lego_200k_256w.gif)
 
 ### Rendering a NeRF
 
@@ -91,7 +91,7 @@ to get a pretrained high-res NeRF for the Fern dataset. Now you can use [`render
 
 ### Replicating the paper results
 
-The example config files run at lower resolutions than the quantitative/qualitative results in the paper and video. To replicate the results from the paper, start with the config files in [`paper_configs/`](https://github.com/bmild/nerf/tree/master/paper_configs). Our synthetic Blender data and LLFF scenes are hosted [here](https://drive.google.com/drive/folders/128yBriW1IG_3NJ5Rp7APSTZsJqdJdfc1) and the DeepVoxels data is hosted by Vincent Sitzmann [here](https://drive.google.com/open?id=1lUvJWB6oFtT8EQ_NzBrXnmi25BufxRfl).
+The example config files run at lower resolutions than the quantitative/qualitative results in the paper and video. To replicate the results from the paper, start with the config files in [`paper_configs/`](https://github.com/bmild/nerf/tree/master/paper_configs). Our synthetic Blender data and LLFF scenes are hosted [here](https://drive.google.com/drive/folders/1cK3UDIJqKAAm7zyrxRYVFJ0BRMgrwhh4) and the DeepVoxels data is hosted by Vincent Sitzmann [here](https://drive.google.com/open?id=1lUvJWB6oFtT8EQ_NzBrXnmi25BufxRfl).
 
 ### Extracting geometry from a NeRF
 
